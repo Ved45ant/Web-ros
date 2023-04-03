@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-li{
+    list-style: none;
+
+}
+.nav-li a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: 0;
+}
+.logo{
+    margin-left: 25px;
+    font-family: cursive;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-li a{
+margin: 15px;
+text-transform: capitalize;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black;
+transition: .5s;
+}
+.nav-li a:hover{
+    color: lightseagreen;
+}
+.navigate{
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    padding: 25px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(4px);
+}
+.myself{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.image{
+    display: grid;
+    justify-content: center;
+}
+.image img{
+    width:23vw;
+    clip-path: circle(40%);
+    
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 150px;
+}
+.image img:hover{
+    transform: translateY(10px);
+}
