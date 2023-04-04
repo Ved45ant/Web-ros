@@ -1,0 +1,4 @@
+<script src="https://kit.fontawesome.com/7cdb135cdd.js"></script>
+  <span class="icons"><i class="fa-brands fa-facebook"></i></span>
+            <span class="icons"><i class="fa-brands fa-instagram"></i></span>
+            <span class="icons"><i class="fa-brands fa-twitter"></i></span>
