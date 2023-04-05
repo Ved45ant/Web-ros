@@ -1,0 +1,60 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .intro{
+        padding: 30px;
+    }
+    .content{
+        grid-template-columns: 410px;
+    justify-content: center;
+    }
+  /* .skills{
+    max-width: 450px;
+  } */
+  .logo{
+    display: none;
+  }
+  .bars{
+    display: block;
+    font-size: 30px;
+  }
+  .nav-li a{
+    font-size: 30px;
+  }
+  .navbar{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .additional{
+    grid-template-columns: auto;
+    padding: 20px;
+  }
+  .nav-ul{
+    display: none;
+  }
+  .nav-ul.mobileview{
+    display: block;
+    font-size: 45px;
+}
+  .knowledge, .tools, .works{
+    grid-template-columns: 50% 50%;
+  }
+  .contact span{
+    font-size: 20px;
+  }
+
+  input{
+    height: 30px;
+    width: auto;
+    padding-left: 15px;
+  }
+  .form input:valid ~ span,
+.form input:focus ~ span{
+    color: #fff;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 10px;
+    padding: 0 10px;
+    border-left: 1px solid aqua;
+    border-right: 1px solid aqua;
+    background-color: #00dfc4;
+}
+}
