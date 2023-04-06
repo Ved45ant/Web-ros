@@ -3,20 +3,43 @@
     text-shadow: 2.5px 2.5px rgba(0 ,0 ,0 ,0.35);
     font-size: 90px;
     font-style: normal;
-    color: rgb(227, 18, 234);
-    margin-right: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0909FF;
+    text-shadow: -2.5px 0px 10px white;
+    animation: ani 2s infinite;
+    -webkit-animation: ani 12s infinite;
+}
+@keyframes ani{
+    0%{
+        text-shadow: 0px 0px 15px #FFFF66;
+    }
+    20%{
+        text-shadow: 0px 0px 12px #ff000d;
+    }
+    40%{
+        text-shadow: 0px 0px 14px #ff0490;
+    }
+    60%{
+        text-shadow: 0px 0px 12px #1bfc06;
+    }
+    80%{
+        text-shadow: 0px 0px 14px #FF7F49;
+    }
+    100%{
+        text-shadow: 0px 0px 15px #FFFF66;
+    }
 }
 
-.p{
+.sub{
     background-image: url("Portfolio Background.jpg");
     text-align: center;
-    text-shadow: 1.5px 1.5px rgba(0 ,0 ,0 ,0.35);
-    font-size: 42px;
-    color: rgba(14, 71, 23, 0.749);
+    color: yellow;
+    text-shadow: 2.1px 2.2px 5px rgba(255,105,180,1);
+    font-size: 48px;
     font-style: italic;
-    background-color:  rgb(212, 70, 70);
-    opacity: 1;
+    background-color:  NONE;
 }
+
 
 .detailed-page{
     border: none;
@@ -37,16 +60,16 @@ body, html {
     height: 100%;
   }
 
-.b{
-  background-image: url("testbg.jpg");
+.body{
+  background-image: url("back-page1.jpg");
   height: 100%;
   background-color: black;
   background-position: center;
   background-repeat: round;
   background-size: cover;
 }
-.b{
-    background-image: url("testbg.jpg");
+.body{
+    background-image: url("back-page1.jpg");
   height: 1%;
   background-position: justified;
   background-repeat: no-repeat;
@@ -91,76 +114,25 @@ body, html {
     animation-delay: 5s;
 }
 .folio{
-    background-color: rgb(103, 46, 5);
+    transition-delay: 0.15s;
     color-scheme: dark;
     font-size: 50px;
-    color: bisque;
+    color: violet;
     text-shadow: 2.78px 4.56px 4.23px rgba(8, 8, 8, 0.97);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    animation-name: example;
-    animation-duration: 7s;
+    animation-name: ani;
+    animation-duration: 2s;
 }
-.one{
-    background-image: "user.jpg";
-}
-
-  @keyframes a {
-    from {background-color: goldenrod;}
-    to {background-color: rgb(13, 13, 2);}
-  }
-  .header {
-    animation-name: a,a1,a2,a3,a4;
-    animation-duration: 5.8s;
-  }
-  @keyframes a1 {
-    from {background-color: yellow;}
-    to {background-color: rgba(18, 192, 85, 0.82);}
-  }
-  .header{
-    background-color:  rgba(81, 27, 163, 0.82);
-    animation-name: a1;
-    animation-duration: 5.8s;
-  }
-  @keyframes a2 {
-    from {background-color: rgba(18, 192, 85, 0.82);}
-    to {background-color: rgba(0, 128, 255, 0.868);}
-  }
-  .header{
-    background-color:  rgba(192, 110, 68, 0.868);
-    animation-name: a2;
-    animation-duration: 5.8s;
-  }
-  @keyframes a {
-    from {background-color: blue;}
-    to {background-color: rgb(224, 99, 15);}
-    to {background-color: aliceblue;}
-  }
-  .header{
-    background-color:  rgba(69, 239, 72, 0.598);
-    animation-name: a3;
-    animation-duration: 5.8s;
-  }
-  @keyframes a4 {
-    from {background-color:greenyellow ;}
-    to {background-color: rgba(255, 255, 0, 0.043);}
-  }
-  .header{
-    background-color:  rgba(69, 239, 72, 0.598);
-    animation-name: a4;
-    animation-duration: 5.8s;
-  }
-
   .total{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*  flex-wrap: wrap-reverse;*/
   }
 
-  .pp{
+  .name{
     color: rgba(101, 236, 246, 0.854);
     font-size: 45px;
-    font-family: cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
     text-align: center;
     margin: 10px;
@@ -168,6 +140,16 @@ body, html {
     padding-left: 5px;
     background-color: none;
     width: 450px;
+    text-shadow: 4px 3.7px 100px rgba(255 ,255 ,255 ,0.358);
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+  .name:hover{
+    text-shadow: 4px 3.7px 5.5px rgba(255, 255, 255, 0.45);
+    font-size: 46px;
   }
   .button{
     background-color: rgb(98,54,134);
@@ -183,13 +165,11 @@ body, html {
     align-items: center;
     font-size: 18px;
     align-content: center;
-
-
-    transition: 0.15s;
-    -webkit-transition: 0.15s;
-    -moz-transition: 0.15s;
-    -ms-transition: 0.15s;
-    -o-transition: 0.15s;
+    transition: 0.s;
+    -webkit-transition: 0.s;
+    -moz-transition: 0.s;
+    -ms-transition: 0.s;
+    -o-transition: 0.s;
 }
 .button:hover{
     box-shadow: 5px 5.5px 4px rgba(239, 57, 96, 0.651);
@@ -198,16 +178,28 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
     margin-top: 2.5px;
+    cursor: pointer;
+}
+.button:active{
+    cursor:grab;
+    font-size: x-samll;
 }
 
 .box{
     background-image: url("box-back.jpg");
     background-size: 500px;
-    background-color: aqua;
 }
-
-.giffiy{
-    background-position: 50px;
-    border-left: 500px;
+.box:hover{
+    box-shadow: 8px 7.8px 50px rgba(239, 57, 96, 0.61);
+    background-size: 505px;
 
 }
+
+.body-sec{
+    background-image: url("back-sec.jpg");
+    height: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+
+  }
