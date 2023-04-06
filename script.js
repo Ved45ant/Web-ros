@@ -1,4 +1,4 @@
-const textColor=["white","#aqua","purple","#ffd700","#000080","aqua"]
+const textColor=["white","aqua","purple","#ffd700","#000080","aqua"]
 const backg = ["bg1","bg2","bg3","bg4","bg5","bg6"]
 let x=0;
 
@@ -12,7 +12,7 @@ function myFunction() {
         anchor[i].style.color=textColor[x]
         anchor[i].style.color=textColor[x]
         anchor[i].addEventListener("mouseover",function (){
-            anchor[i].style.color = "red"
+            anchor[i].style.color = "black"
         })
         anchor[i].addEventListener("mouseout",function (){
             anchor[i].style.color = textColor[x-1]
